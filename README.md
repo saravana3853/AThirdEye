@@ -1,8 +1,10 @@
-## A notebook to caption image and read out the caption , act as an eye for blind people
+### A notebook to caption image and read out the caption , act as an eye for blind people
 
-## DataSet :  /kaggle/input/flickr-image-dataset
+### DataSet :  
 
-## Architecture:
+/kaggle/input/flickr-image-dataset
+
+### Architecture:
 
 1. Vision Transformer Feature Extractor 
 2. Vision Transformer Model
