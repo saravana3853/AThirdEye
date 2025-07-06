@@ -1,4 +1,6 @@
-### A notebook to caption image and read out the caption , act as an eye for blind people
+### Eye for Blind
+
+A notebook to caption image and read out the caption , act as an eye for blind people
 
 ### DataSet :  
 
