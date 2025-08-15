@@ -32,7 +32,7 @@
 ### Output Samples
 ![ImageCapionReader](https://github.com/user-attachments/assets/1bdeabce-d81e-4ff8-8c92-13829c0b5257)
 
-[Image_Caption_Reader.pdf](https://github.com/user-attachments/files/21795784/Image_Caption_Reader.pdf)
+![ImageCaptionReader](https://github.com/user-attachments/assets/2db42161-4c2c-4c83-aee3-cab7a46e7ff4)
 
 
 
