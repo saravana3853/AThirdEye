@@ -55,11 +55,11 @@ feature_extractor = ViTFeatureExtractor.from_pretrained("google/vit-base-patch16
 vit_model = TFAutoModel.from_pretrained("google/vit-base-patch16-224-in21k")
 
 def verify_model_weights():
-    with h5py.File("/kaggle/input/model1/transformers/default/1/caption_decoder.weights.h5", "r") as f:
+    with h5py.File("./caption_decoder.weights.h5", "r") as f:
         return list(f.keys())
 
 def retrieve_tokenizer():        
-    file_path = '/kaggle/input/model1/transformers/default/1/tokenizer.pickle'
+    file_path = './tokenizer.pickle'
     with open(file_path, 'rb') as file:
         tokenizer = pickle.load(file)
     return tokenizer
@@ -76,7 +76,7 @@ def load_model(vocab_size):
     dummy_features = tf.random.uniform((1, 196, 768))
     dummy_captions = tf.random.uniform((1, 20), maxval=vocab_size, dtype=tf.int32)
     h5_model(dummy_features,dummy_captions)
-    h5_model.load_weights('/kaggle/input/model1/transformers/default/1/caption_decoder.weights.h5')
+    h5_model.load_weights('./caption_decoder.weights.h5')
     return h5_model
 
 def generate_caption(features,model,tokenizer,max_len=30):
